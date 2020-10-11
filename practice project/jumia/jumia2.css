@@ -1,0 +1,623 @@
+.mySlides {
+    display: none;
+}
+.slideshow-container{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    background-color: teal;
+    position: relative;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+ padding: 15px;
+ padding-left: 20px;
+ padding-right: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 50%;
+}
+
+.next {
+
+  right: 0;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+ 
+  cursor:pointer;
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active{
+  background-color: orange;
+}
+.mySlides img{
+    height: 400px;
+    width: 700px;
+}
+.dotBox{
+    position: relative;
+    top: -50px;
+    left: 350px;
+}
+.slider-body{
+    background-color: violet;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .8}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .8}
+    to {opacity: 1}
+  }
+body{
+    background-color: whitesmoke;
+    
+}
+.dropdown{
+    background-color: white;
+    position: absolute;
+    width: 90px;
+    display: none;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+}
+.pay a:hover{
+   color: blue;
+}
+.party a:hover{
+    color: goldenrod;
+}
+.time a:hover{
+    color: goldenrod;
+}
+.food a:hover{
+    color: orangered;
+}
+.jumia-active:hover .dropdown{
+    display: block;
+    
+}
+.pay:hover .dropdown{
+    display: block;
+}
+.food:hover .dropdown{
+    display: block;
+}
+.party:hover .dropdown{
+    display: block;
+}
+.time:hover .dropdown{
+    display: block;
+}
+
+ .tabs{
+    background-color: whitesmoke;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    padding: 5px;
+
+} 
+.tabs li{
+    display: inline-block;
+    position: relative;
+    z-index: 7;
+    margin-left: 10px;
+}
+.tabs li a{
+    text-decoration-line: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+
+}
+.format-text:hover {
+    color: orange;
+}
+#fa-dot-circle{
+    color: #ffa500;
+    width: 8px;
+    position: relative;
+    top: -3px;
+    left: -5px;
+}
+.disable a{
+    color: rgba(129, 129, 129, 0.678);
+}
+.jumia-active a{
+    color: black
+}
+.link{
+    position: relative;
+    color: orange;
+    left: 30px;
+    top: -10px;
+}
+#link{
+    margin-right: 5px;
+}
+ .nav{
+    background-color:white;
+    width: 1300px;
+    box-shadow: 0px 2px rgb(218, 218, 218);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    margin-left: -10px;
+    height: 55px;
+    margin-top: -20px;
+
+  
+  
+    
+}
+
+
+.nav li{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 17px;;
+
+ 
+}
+.logo{
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+.logo img{
+   width: 30px;
+   height: 30px;
+    position: relative;
+   top: 5px;
+  
+  
+}
+
+.fa-search{
+    position: relative;
+    left: 80px;
+    z-index: 2;
+    color: grey;
+}
+.input-box{
+    padding: 8px;
+    padding-left: 30px;
+    width: 500px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    margin-left: 55px;
+    font-size: 15px;
+    border-color: whitesmoke;
+}
+.search{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 12px;
+    position: relative;
+    top: -5px;
+    border: white;
+    box-shadow: 0px 2px rgb(194, 194, 194);
+    color: white;
+   
+}
+.fa-chevron-down , .fa-chevron-up{
+    margin-left: 10px;
+    width: 5px;
+    height: 12px;
+}
+.fa-user{
+    margin-right: 10px;
+}
+.fa-question-circle{
+    margin-right: 10px;
+}
+.fa-cart-arrow-down{
+    margin-right: 10px;
+}
+.format-text{
+    font-size: 17px;
+    font-weight: 200px;
+} 
+ .list-box .modal{
+    background-color: white;
+    width: 200px;
+    padding-left: 5px;
+    font-size: 14px;
+    height: 400px;
+    overflow: hidden;
+   
+  
+
+
+}
+.modal p:hover{
+    color: orange;
+}
+
+.list-box{
+    clear: both;
+    display: flex;
+    justify-content: center;
+    height: 400px;;
+    z-index: 2;
+    overflow: hidden;
+    margin-top: 20px;
+  
+   
+}
+.modal, .carousel, .extra{
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.table-format{
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 720px;
+    padding: 10px;
+    margin-left: -20px;
+    background-color: white;
+   
+}
+td p{
+    margin-top: -7px;
+}
+
+.health-beauty:hover{
+    color :orange;
+}
+.supermarket:hover{
+    color :orange;
+}
+  
+
+
+
+
+#fa-arrow-left , #fa-arrow-right{
+    margin-top: 12px;
+    color: white;
+}
+
+
+
+.hoverBox{
+    display: flex;
+    justify-content: space-between;
+    
+
+    
+   
+  
+}
+
+
+.slideImages{
+   width: 700px;
+   height: 450px;
+
+}
+.jumiaImage{
+    width: 230px;
+    height: 195px;
+}
+.info{
+    background-color: white;
+    height: 175px;
+    padding-top: 10px;
+}
+.extra{
+    margin-top: -12px;
+   
+}
+.info ,.jumiaImage , .carousel, .table-format, .modal{
+    border-radius: 5px;
+    box-shadow: 1px 0.5px 5px rgb(226, 225, 225) , -1px -0.5px 5px rgb(226, 225, 225) ;
+}
+.link-box{
+    display: flex;
+    justify-content: space-evenly;
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
+.link-box div{
+    background-color: white;
+    height: 20px;
+    width: 220px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 1px 0.5px 10px rgb(226, 225, 225) , -1px -0.5px 10px rgb(226, 225, 225) ;
+}
+.fa-apple-alt, .fa-plus-square, .fa-home, .fa-mobile-alt , .fa-tv, .fa-camera-retro, .fa-tshirt,
+.fa-baby-carriage,.fa-gamepad,.fa-dumbbell,.fa-car ,.fa-comment-dots{
+    margin-right: 5px;
+}
+.ad-slider-title{
+    width: 1165px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 1px 0.5px 10px rgb(226, 225, 225) , -1px -0.5px 10px rgb(226, 225, 225) ;
+
+}
+.slider-name{
+    font-weight: 550;
+    font-size: 22px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.adSlides{
+    display: flex;
+    background-color: white;
+    height: 250px;
+    margin-top: 50px;
+    width: fit-content;
+  
+}
+.adSlider{
+    overflow: auto;
+    overflow-x: hidden;
+}
+.adSlider div{
+    margin-left: 15px;;
+}
+.adSlider div img{
+    height: 170px;
+    width: 200px;
+}
+.adControls{
+    display: flex;
+}
+/* .former {
+    float: left;
+}
+.latter{
+    float: right;
+} */
+.former, .latter {
+ background-color : rgba(0, 0, 0, 0.8);
+ width: fit-content;
+ height: fit-content;
+padding-top: 5px;
+padding-bottom: 5px;
+ margin-top: 130px;
+ border-radius: 50%;
+
+}
+.underline{
+    margin-top: -3px;
+    color: rgb(128, 128, 128);
+    text-decoration: line-through;
+    font-size: small;
+}
+#former , #latter{
+    margin-left: 15px;
+    color: white;
+}
+body{
+    overflow-x: hidden;
+}
+.slider-name-second,.slider-name-third{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.second{
+    display: flex;
+    overflow: auto;
+    overflow: hidden;
+    background-color: white;
+    height: 250px;
+    margin-top: 50px;
+}
+.second div , .third div{
+    margin-left: 15px;
+}
+.second div img {
+    height: 170px;
+    width: 200px;
+}
+.third{
+    display: flex;
+    background-color: white;
+    height: 450px;
+    margin-top: 20px;
+}
+.third div img{
+    height: 150px;
+    width: 150px;
+}
+.slider-name-third{
+    background-color: white;
+    color: black;
+  
+}
+.fourth{
+    display: flex;
+    background-color: #ffffff;
+    height: 260px;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.fourth div img{
+    height: 250px;
+    width: 570px;
+    margin-left: 10px;
+}
+.slider-name-fifth{
+    background-color: #ffa500;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.fa-arrow-left , .fa-arrow-right{
+    font-size: 13px;
+    position: relative;
+    left: -7px;
+ 
+}
+.arrow{
+    position: fixed;
+    bottom: 0;
+    right: 15px;;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 0.5px 10px rgb(226, 225, 225) , -0px -0px 1px rgb(226, 225, 225) ;
+}
+.fa-arrow-up{
+    position: relative;
+    top: 12px;
+    left: 13px;
+}
+
+.login{
+    background-color: orange;
+    width: 130px;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 1px 0.5px 10px rgb(226, 225, 225) , -1px -0.5px 10px rgb(226, 225, 225) ;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  
+
+.login-info{
+    font-size: 14px;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    z-index: 1243578;
+    color:black;
+}
+.help-info{
+   font-size: 14px;
+   width: 200px;
+   text-align: center;
+   background-color: white;
+   position: absolute;
+   z-index: 1243578;
+   color:black;
+}
+.login-in{
+    width: 200px;
+   
+}
+.fa-shopping-bag{
+    background-color: red;
+    padding: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    color: white;
+}
+.fa-mobile{
+    background-color: green ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    color: white;
+    
+   
+}
+.fa-egg{
+    background-color: orange;
+    padding: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    color: white;
+   
+}
+.fa-plane{
+    background-color: blue;
+    padding: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    color: white;
+   
+}
+marquee{
+    background-color: black;
+    text-align: center;
+    height: 60px;
+   
+   
+  
+}
+.marquee{
+    display: flex;
+    margin-bottom: -40px;
+    justify-content: center;
+    
+}
+.fixed{
+    width: 300px;
+    height: 60px;
+}
+.jpg{
+    margin-top: -5px;
+}
+marquee img{
+    width: 600px;
+}
